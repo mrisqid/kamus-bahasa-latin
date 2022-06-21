@@ -2,8 +2,8 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 
 // MUI components
-import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
+import Stack from '@mui/material/Stack';
 
 // Custom Components
 import TitleBar from './components/title-bar';
@@ -32,44 +32,48 @@ function App() {
   const [pageOrder, setPageOrder] = React.useState(0);
 
   return (
-    <Container
-      maxWidth="sm"
-      className="container"
+    <Stack
+      direction="row"
+      justifyContent="center"
     >
-      {
-        hideWelcome ? (
-          <Grid
-            container
-            direction="column"
-          >
+      <div
+        className="container"
+      >
+        {
+          hideWelcome ? (
             <Grid
               container
-              item
               direction="column"
-              xs={10}
             >
-              <TitleBar
-                pageOrder={pageOrder}
-              />
-              <div className="pages-div">
-                <Pages pageOrder={pageOrder} />
-              </div>
+              <Grid
+                container
+                item
+                direction="column"
+                xs={10}
+              >
+                <TitleBar
+                  pageOrder={pageOrder}
+                />
+                <div className="pages-div">
+                  <Pages pageOrder={pageOrder} />
+                </div>
+              </Grid>
+              <Grid
+                item
+                xs={2}
+              >
+                <MenuBar
+                  value={pageOrder}
+                  setValue={setPageOrder}
+                />
+              </Grid>
             </Grid>
-            <Grid
-              item
-              xs={2}
-            >
-              <MenuBar
-                value={pageOrder}
-                setValue={setPageOrder}
-              />
-            </Grid>
-          </Grid>
-        ) : (
-          <Welcome setHide={setHideWelcome} />
-        )
-      }
-    </Container>
+          ) : (
+            <Welcome setHide={setHideWelcome} />
+          )
+        }
+      </div>
+    </Stack>
   );
 }
 
