@@ -1,0 +1,40 @@
+.text-area {
+  width: 88%;
+  border: 1px solid #1976d2;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.welcome-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+}
+.welcome-container::before {
+  content: "";
+  background-image: linear-gradient(rgba(45, 45, 45, 0.327),rgba(0, 0, 0, 0.4)) , url('../../images/background-3.jpg');
+  background-size: cover;
+  background-position: right 20% bottom 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.welcome-icon {
+  font-size: 4rem !important;
+  margin-bottom: 3rem !important;
+}
+
+.welcome-btn {
+  padding: 1rem;
+  margin-top: 2rem !important;
+  min-width: 100px !important;
+  border-radius: 10px !important;
+}
+
+.app-name {
+  position: relative;
+}

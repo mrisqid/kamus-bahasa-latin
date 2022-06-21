@@ -1,0 +1,15 @@
+* {
+  font-size: 1rem;
+}
+
+.container {
+  height: 100vh;
+}
+
+.pages-div {
+  padding: 2rem 1rem;
+}
+
+.translatedText {
+  font-style: italic;
+}
