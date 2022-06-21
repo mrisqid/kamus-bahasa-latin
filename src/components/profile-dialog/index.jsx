@@ -7,7 +7,7 @@ import DialogContent from '@mui/material/DialogContent';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 
-import foto from '../../../images/profile.jpeg';
+import foto from '../../../images/aman-profile.jpeg';
 
 export default function ProfileDialog({
   open,
