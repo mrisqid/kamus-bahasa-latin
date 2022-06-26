@@ -44,7 +44,7 @@ export default function GuideDialog({
                 lineHeight: '1.25rem',
               }}
             >
-              Di Halaman Pencarian bisa digunakan untuk mentranslate kata-kata ataupun kalimat ke bahasa yang dipilih.
+              Halaman Pencarian bisa digunakan untuk mentranslate kata-kata ataupun kalimat ke bahasa yang dipilih.
             </Typography>
           </li>
           <li>
@@ -54,7 +54,7 @@ export default function GuideDialog({
                 lineHeight: '1.25rem',
               }}
             >
-              Di Halaman Flora ataupun Fauna bisa digunakan untuk mencari list ataupun katalog berdasarkan jenis flora ataupun fauna.
+              Halaman Flora ataupun Fauna bisa digunakan untuk mencari list ataupun katalog berdasarkan jenis Flora ataupun Fauna.
             </Typography>
           </li>
         </ol>
